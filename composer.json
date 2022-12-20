@@ -1,0 +1,32 @@
+{
+    "name": "rapidez/package-create",
+    "description": "Easily create Rapidez packages for modular development",
+    "require":
+    {
+        "php": "^8.0|^8.1",
+        "rapidez/core": "~0.7"
+    },
+    "config":
+    {
+        "sort-packages": true
+    },
+    "extra":
+    {
+        "laravel":
+        {
+            "providers":
+            [
+                "Rapidez\\PackageCreate\\PackageCreateServiceProvider"
+            ]
+        }
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Rapidez\\PackageCreate\\": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

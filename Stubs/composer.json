@@ -1,0 +1,30 @@
+{
+    "name": ":jsonVendor/:jsonPackage",
+    "description": "",
+    "keywords": [
+        "rapidez"
+    ],
+    "homepage": "https://rapidez.io",
+    "license": "GPL-3.0",
+    "require": {
+        "php": "^8.0|^8.1",
+        "rapidez/core": "~0.7"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                ":vendor\\:package\\:packageServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            ":vendor\\:package\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
