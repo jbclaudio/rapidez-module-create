@@ -12,6 +12,6 @@ class :packageServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    {
+    {:loadRoutes:loadViews:loadConfig
     }
 }

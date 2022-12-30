@@ -9,12 +9,17 @@ Simply install the package using composer:
 Since this package uses composer to install and autoload the created packages, this package can be removed while still keeping created packages functional.
 
 ## Usage
-`php artisan rapidez:package:create {package} {--json-vendor=} {--json-package=} {--stub=}`
+`php artisan rapidez:package:create {package} {--json-vendor=} {--json-package=}`
 
 if json-vendor and json-package are not defined, we will make assumptions based on the vendor and package name
 
-The possible values of stub are:
- - default (the VERY basics of what you need for an install)
+### Extra options
+After running the command, a few questions are asked that can be answered with yes (y) / no (n):
+Question | Action
+--- | ---
+Will this package include views? 👀 | The `resources/views` folders will be created, the necessary code will be added to the Service Provider and a brief explanation will be put in the README
+Will this package include routes? 🔗 | The route file `routes/web.php` will be created and the necessary code added to the Service Provider
+Would you like me to add a config file? ⚙️ | The default config file will be created, the necessary code added to the Service Provider and a brief explanation will be put in the README
 
 ## Configuration
 If you wish to change the folder where the new packages will be installed to you can publish the config:

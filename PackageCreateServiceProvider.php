@@ -20,10 +20,10 @@ class PackageCreateServiceProvider extends ServiceProvider
             ]);
         }
 
-        $this->mergeConfigFrom(__DIR__.'/config/package-create.php', 'package-create');
-
         $this->publishes([
             __DIR__.'/config/package-create.php' => config_path('package-create.php'),
         ], 'config');
+
+        $this->mergeConfigFrom(__DIR__.'/config/package-create.php', 'package-create');
     }
 }
