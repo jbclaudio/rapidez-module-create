@@ -14,7 +14,6 @@ Since this package uses composer to install and autoload the created packages, t
 if json-vendor and json-package are not defined, we will make assumptions based on the vendor and package name
 
 The possible values of stub are:
- - spatie (uses the [spatie skeleton](https://github.com/spatie/package-skeleton-laravel), may prove a somewhat unstable on old laravel installations but is much more fully featured)
  - default (the VERY basics of what you need for an install)
 
 ## Configuration
